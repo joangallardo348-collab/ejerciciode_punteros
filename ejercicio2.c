@@ -5,10 +5,13 @@ int main()
     char *ptr;
 
     ptr = &vocales[0];
+    *(ptr+3)= 'x';
 
     for(int i = 0; i < 5; i++)
     {
+        
         printf("%c ", vocales[i]);
-        printf("%c\n", *(ptr+i));
+        printf("%c\n", *(ptr++));
     }
+
 }
